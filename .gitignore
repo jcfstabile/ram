@@ -1,0 +1,9 @@
+/bin/
+*.html
+!*wlk
+!*wtest
+!*wprg
+Session.vim
+*swp
+template.sh
+assets-originals/
