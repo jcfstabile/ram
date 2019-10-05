@@ -5,7 +5,7 @@ object r{
 	var property position = game.at(1,1)
 	var grabed = nada 
 
-	method position() { //Bad practice or TABU
+	method position() { //Bad practice or TABU or just collaboration
 		grabed.position(position)
 		return position
 	}
@@ -17,7 +17,6 @@ object r{
 	method trigger() { grabed.trigger() }
 
 	method grab() { 
-		console.println(game.colliders(self))
 		grabed = game.colliders(self).head()
 	}
 
