@@ -1,4 +1,5 @@
 import wollok.game.*
+import niveles.*
 
 object r{
 	var property image = "assets/r-face-smile.png"
@@ -47,12 +48,14 @@ class P{
 	const property isPortal = true
 	
 	method travel() { 
-		fondo.image("assets/ram-fondo2.png")
-		game.removeVisual(self) 
+		nivel1.hide()
+		nivel2.show()
+		//fondo.image("assets/ram-fondo2.png")
+		//game.removeVisual(self) 
 	}
 
 }
 
-object fondo{ var property image = "assets/ram-fondo3.png"
+class Fondo{ var property image = "assets/ram-fondo3.png"
 		var property position = game.origin()
 }

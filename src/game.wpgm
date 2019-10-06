@@ -1,16 +1,16 @@
 import personajes.*
 import config.*
 import wollok.game.*
+import niveles.*
 
 program PepitaGame {
 	game.title("R&M")
 	game.height(10)
 	game.width(10)
-	//game.boardGround("assets/ram-fondo1.png")
-	//game.boardGround("assets/ram-fondo2.png")
-        game.addVisual(fondo)
-	game.addVisualCharacter(r)
-	game.addVisual(g)
+        // game.addVisual(fondo)
+	// game.addVisualCharacter(r)
+	// game.addVisual(g)
+        nivel1.show()
 	game.showAttributes(r) //Debug
 
         config.teclas()
